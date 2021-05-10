@@ -1,9 +1,9 @@
-import React from 'react';
-import './App.css';
+import PingPongDemo from "./playground/1.PingPong";
 
 function App() {
   return (
     <div className="App">
+      <PingPongDemo />
     </div>
   );
 }
