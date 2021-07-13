@@ -12,4 +12,8 @@ For example
 
 `Order` gives the basic info of customer, including name, age,seat class
 
-`Luggage` gives the luggage info of this order,
+`Luggage` gives the luggage info of this order
+
+So, we let `reselect` in.
+
+Also, we are using `react-final-form` to handle the Payment form.
