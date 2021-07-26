@@ -13,6 +13,7 @@ export type Ping = () => PingAction;
 export type Pong = () => PongAction;
 
 export interface State {
+  isEverPinged: boolean;
   isPinging: boolean;
 }
 

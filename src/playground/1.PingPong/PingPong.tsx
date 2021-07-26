@@ -4,14 +4,18 @@ import { Dispatch } from "redux";
 import { ping } from "./actions";
 import { DispatchProps, PingPongProps, State } from "./types";
 
-export const PingPong: FC<PingPongProps> = ({ isPinging, ping }) => {
+export const PingPong: FC<PingPongProps> = ({
+  isPinging,
+  isEverPinged,
+  ping,
+}) => {
   const handlePing = () => {
     ping();
   };
   return (
     <div>
       <h2>isPinging: {isPinging ? "yes" : "no"}</h2>
-      <button disabled={isPinging} onClick={handlePing}>
+      <button disabled={isEverPinged} onClick={handlePing}>
         start pinging
       </button>
     </div>

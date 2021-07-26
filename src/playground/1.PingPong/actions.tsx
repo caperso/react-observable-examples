@@ -8,4 +8,3 @@ export const ping: Ping = () => ({
 export const pong: Pong = () => ({
   type: ActionTypes.PONG,
 });
-
