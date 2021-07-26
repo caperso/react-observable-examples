@@ -8,5 +8,5 @@ const state: SelectStore<BookingState, PaymentFormContainerStateProps> = (
   state
 ) => state[DOMAIN];
 
-const selectPayment: SelectStore = (store) =>
-  createSelector(state(), () => store.paymentOptions);
+export const selectPayment: SelectStore = (store) =>
+  createSelector(state, () => store.paymentOptions);

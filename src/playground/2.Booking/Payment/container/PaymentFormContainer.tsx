@@ -1,13 +1,12 @@
 import { Form } from "react-final-form";
 import { connect } from "react-redux";
 import {
-    DispatchProps,
+  DispatchProps,
   FromValue,
   PaymentFormContainerStateProps,
-  PaymentFromContainerProps,
 } from "./type";
 
-export const PaymentFormContainer: PaymentFromContainerProps = ({
+export const PaymentFormContainer = ({
   submitForm,
 }: PaymentFormContainerStateProps & DispatchProps) => {
   const handleSubmit = (value: FromValue) => {
